@@ -3,6 +3,6 @@ import csv
 
 ddl = st.text_input("Enter the DDL")
 ddl_list = ddl.split(', ')
-for i in ddl_list:
-  i = i.replace(' ','')
+for i in range(len(ddl_list)):
+  ddl_list[i] = ddl_list[i].replace(' ','')
 ddl_list
