@@ -29,7 +29,7 @@ csv_content = csv_buffer.getvalue()
 # Offer the download button
 if st.button("Download CSV"):
     st.download_button(
-        label="Download Separated Lists",
+        label="Download DDL Excel",
         data=csv_content,
         file_name="separated_lists.csv",
         mime="text/csv",
