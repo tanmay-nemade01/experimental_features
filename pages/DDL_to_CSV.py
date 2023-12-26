@@ -1,5 +1,6 @@
 import streamlit as st
 import csv
+import io
 
 ddl = st.text_input("Enter the DDL")
 ddl_list = ddl.split(', ')
@@ -14,14 +15,16 @@ for element in ddl_list:
   column_names.append(name)
   column_types.append(type)
 
-csv_content = ""
-csv_writer = csv.writer(st.empty())  # Create a temporary CSV writer object
+csv_buffer = io.StringIO()
+csv_writer = csv.writer(csv_buffer)  # Create a CSV writer on the buffer
+
+# Write the CSV content to the buffer
 csv_writer.writerow(["Column Name", "Column Type"])
 for name, type in zip(column_names, column_types):
     csv_writer.writerow([name, type])
 
 # Get the CSV content as a string
-csv_content = csv_writer.out.getvalue().decode("utf-8")
+csv_content = csv_buffer.getvalue()
 
 # Offer the download button
 if st.button("Download CSV"):
