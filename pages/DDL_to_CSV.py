@@ -19,7 +19,7 @@ csv_buffer = io.StringIO()
 csv_writer = csv.writer(csv_buffer)  # Create a CSV writer on the buffer
 
 # Write the CSV content to the buffer
-csv_writer.writerow(["Column Name", "Column Type"])
+csv_writer.writerow(["COLUMN_NAME", "TYPE"])
 for name, type in zip(column_names, column_types):
     csv_writer.writerow([name, type])
 
