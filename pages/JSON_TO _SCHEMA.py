@@ -9,7 +9,6 @@ uploaded_file = st.file_uploader("Upload a JSON file")
 if uploaded_file is not None:
   try:
     data = json.load(uploaded_file)
-    st.write(data)  # Display the entire JSON data
 
     name_list = []
     type_list = []
