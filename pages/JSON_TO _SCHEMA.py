@@ -17,8 +17,12 @@ if uploaded_file is not None:
       name_list.append(field["name"])
       type_list.append(field["type"])
 
-    name_list
-    type_list
+    df = {
+      COLUMN_NAME : name_list,
+      TYPE : type_list
+    }
+    
+    df
 
   except json.JSONDecodeError as e:
     st.error("Invalid JSON file. Please upload a valid JSON file.")
