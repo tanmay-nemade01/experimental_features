@@ -1,5 +1,6 @@
 import streamlit as st
 import json
+import pandas as pd
 
 st.title("JSON Data Extractor")
 
@@ -24,7 +25,7 @@ if uploaded_file is not None:
     
     df = pd.DataFrame(data)
 
-    df
+    st.table(df)
 
   except json.JSONDecodeError as e:
     st.error("Invalid JSON file. Please upload a valid JSON file.")
