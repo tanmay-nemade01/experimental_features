@@ -24,7 +24,7 @@ if uploaded_file is not None:
     
     df = pd.DataFrame(data)
 
-  data
+    df
 
   except json.JSONDecodeError as e:
     st.error("Invalid JSON file. Please upload a valid JSON file.")
