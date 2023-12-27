@@ -18,8 +18,8 @@ if uploaded_file is not None:
       type_list.append(field["type"])
 
     df = {
-      COLUMN_NAME : name_list,
-      TYPE : type_list
+      "COLUMN_NAME" : name_list,
+      "TYPE" : type_list
     }
     
     df
