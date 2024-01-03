@@ -59,4 +59,4 @@ if ddl is not None:
         mime="text/csv",
     )
   except:
-    st.error('Enter a valid DDL')
+    st.info('Please Enter a valid DDL')
