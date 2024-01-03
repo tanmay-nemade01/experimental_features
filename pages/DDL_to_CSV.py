@@ -60,3 +60,5 @@ if ddl is not None:
     )
   except:
     st.info('Please Enter a valid DDL')
+
+st.image('https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1920px-Google_Images_2015_logo.svg.png')
