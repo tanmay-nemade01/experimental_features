@@ -62,4 +62,4 @@ if ddl is not None:
   except:
     st.error('text Box is Empty')
 
-st.image('https://github.com/tanmay-nemade01/experimental_features/blob/main/screenshots/DDL%20Screenshot.png')
+st.image('https://github.com/tanmay-nemade01/experimental_features/blob/main/screenshots/DDL%20Screenshot.png?raw=true')
