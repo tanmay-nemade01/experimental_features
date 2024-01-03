@@ -16,11 +16,11 @@ for element in ddl_list:
   column_names.append(name)
   column_types.append(type)
 
-for i in range(len(type_list)):
-    if type_list[i] == 'VARCHAR(16777216)':
-        type_list[i] = 'STRING'
-    if type_list[i] == 'TIMESTAMP_NTZ':
-        type_list[i] = 'TIMESTAMP'
+for i in range(len(column_types)):
+    if column_types[i] == 'VARCHAR(16777216)':
+        column_types[i] = 'STRING'
+    if column_types[i] == 'TIMESTAMP_NTZ':
+        column_types[i] = 'TIMESTAMP'
 
 data = {
   "COLUMN_NAME" : column_names,
