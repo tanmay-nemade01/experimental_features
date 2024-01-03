@@ -1,6 +1,7 @@
 import streamlit as st
 import csv
 import io
+import pandas as pd
 
 ddl = st.text_input("Enter the DDL")
 ddl_list = ddl.split(', ') 
