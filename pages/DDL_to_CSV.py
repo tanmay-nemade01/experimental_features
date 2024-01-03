@@ -15,6 +15,15 @@ for element in ddl_list:
   column_names.append(name)
   column_types.append(type)
 
+data = {
+  "COLUMN_NAME" : name_list,
+  "TYPE" : type_list
+}
+
+df = pd.DataFrame(data)
+
+st.dataframe(df)
+
 csv_buffer = io.StringIO()
 csv_writer = csv.writer(csv_buffer)  # Create a CSV writer on the buffer
 
