@@ -16,8 +16,8 @@ for element in ddl_list:
   column_types.append(type)
 
 data = {
-  "COLUMN_NAME" : name_list,
-  "TYPE" : type_list
+  "COLUMN_NAME" : column_names,
+  "TYPE" : column_types
 }
 
 df = pd.DataFrame(data)
