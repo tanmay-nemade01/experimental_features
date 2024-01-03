@@ -27,10 +27,16 @@ for name, type in zip(column_names, column_types):
 csv_content = csv_buffer.getvalue()
 
 # Offer the download button
-if st.button("Download CSV"):
-    st.download_button(
-        label="Download DDL Excel",
-        data=csv_content,
-        file_name="separated_lists.csv",
-        mime="text/csv",
-    )
+# if st.button("Download CSV"):
+#     st.download_button(
+#         label="Download DDL Excel",
+#         data=csv_content,
+#         file_name="separated_lists.csv",
+#         mime="text/csv",
+#     )
+  st.download_button(
+      label="Download DDL Excel",
+      data=csv_content,
+      file_name="separated_lists.csv",
+      mime="text/csv",
+  )
