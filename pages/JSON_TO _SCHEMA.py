@@ -47,12 +47,12 @@ if uploaded_file is not None:
     #         file_name="separated_lists.csv",
     #         mime="text/csv",
     #     )
-st.download_button(
-    label="Download DDL Excel",
-    data=csv_content,
-    file_name="separated_lists.csv",
-    mime="text/csv",
-)
+    st.download_button(
+        label="Download DDL Excel",
+        data=csv_content,
+        file_name="separated_lists.csv",
+        mime="text/csv",
+    )
 
   except json.JSONDecodeError as e:
     st.error("Invalid JSON file. Please upload a valid JSON file.")
