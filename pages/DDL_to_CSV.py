@@ -58,7 +58,8 @@ if ddl is not None:
         file_name="separated_lists.csv",
         mime="text/csv",
     )
+    st.info('Try not to include FILE_DATE COLUMN')
   except:
-    st.info('Please Enter a valid DDL')
+    st.error('text Box is Empty')
 
-st.image('https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/1920px-Google_Images_2015_logo.svg.png')
+st.image('https://github.com/tanmay-nemade01/experimental_features/blob/main/screenshots/DDL%20Screenshot.png')
