@@ -18,7 +18,13 @@ if uploaded_file is not None:
     # Optional: Extract specific data for presentation
     for field in data["fields"]:
       name_list.append(field["name"])
-      type_list.append(field["type"])
+      type_list.append(field["type
+      
+    for i in range(len(type_list)):
+        if type_list[i] == 'VARCHAR(16777216)':
+            type_list[i] = 'STRING'
+        if type_list[i] == 'TIMESTAMP_NTZ':
+            type_list[i] = 'TIMESTAMP'
 
     data = {
       "COLUMN_NAME" : name_list,
