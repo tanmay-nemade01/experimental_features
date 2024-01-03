@@ -4,6 +4,7 @@ import io
 import pandas as pd
 
 ddl = st.text_input("Enter the DDL")
+st.info('Try not to include FILE_DATE COLUMN')
 if ddl is not None:
   try:
     ddl_list = ddl.split(', ') 
@@ -58,7 +59,7 @@ if ddl is not None:
         file_name="separated_lists.csv",
         mime="text/csv",
     )
-    st.info('Try not to include FILE_DATE COLUMN')
+
   except:
     st.error('text Box is Empty')
 
