@@ -51,7 +51,7 @@ csv_content = csv_buffer.getvalue()
 #         mime="text/csv",
 #     )
 st.download_button(
-    label="Download DDL Excel",
+    label="Download",
     data=csv_content,
     file_name="separated_lists.csv",
     mime="text/csv",
