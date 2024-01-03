@@ -16,6 +16,8 @@ for element in ddl_list:
   column_names.append(name)
   column_types.append(type)
 
+column_types.replace('VARCHAR(16777216)','STRING')
+
 data = {
   "COLUMN_NAME" : column_names,
   "TYPE" : column_types
