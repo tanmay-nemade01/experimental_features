@@ -10,7 +10,6 @@ if ddl is not None:
     for i in range(len(ddl_list)):
       ddl_list[i] = ddl_list[i].lstrip()
       ddl_list[i] = ddl_list[i].replace('"','')
-    ddl_list
     column_names = []
     column_types = []
     
@@ -18,6 +17,9 @@ if ddl is not None:
       name, type = element.split(" ")
       column_names.append(name)
       column_types.append(type)
+
+    column_names
+    column_types
     
     for i in range(len(column_types)):
         if column_types[i] == 'VARCHAR(16777216)':
