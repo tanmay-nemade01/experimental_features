@@ -13,7 +13,7 @@ if ddl is not None:
   column_types = []
   
   for element in ddl_list:
-    if 'NOT_NULL' in element;
+    if 'NOT NULL' in element;
       name, not_null, type = element.split(" ")
       column_names.append(name)
       column_types.append(type)
