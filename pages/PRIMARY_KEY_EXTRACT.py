@@ -14,7 +14,7 @@ if ddl is not None:
   
   for element in ddl_list:
     if "NOT NULL" in element:
-      name, not_null, type = element.split(" ")
+      name, not1, null, type = element.split(" ")
       column_names.append(name)
       column_types.append(type)
 
