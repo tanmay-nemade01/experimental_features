@@ -21,7 +21,9 @@ if ddl is not None:
 
   column_names
   column_types
-  str1 = str(column_names)
+  str1 = ''
+  for i in column_names:
+    str1 = str1 + i
   str1
 
 st.image('https://github.com/tanmay-nemade01/experimental_features/blob/main/screenshots/DDL%20Screenshot.png?raw=true')
