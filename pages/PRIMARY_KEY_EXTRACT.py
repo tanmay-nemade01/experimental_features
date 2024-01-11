@@ -7,10 +7,9 @@ ddl = st.text_input("Enter the DDL")
 if ddl is not None:
   try:
     ddl_list = ddl.split(', ')
-    ddl_list
     for i in range(len(ddl_list)):
       ddl_list[i] = ddl_list[i].lstrip()
-    
+    ddl_list
     column_names = []
     column_types = []
     
