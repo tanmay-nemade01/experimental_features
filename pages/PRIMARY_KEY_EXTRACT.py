@@ -26,4 +26,4 @@ if ddl is not None:
     str1 = str1 + i + ','
   str1[:-1]
 
-st.image('https://github.com/tanmay-nemade01/experimental_features/blob/main/screenshots/DDL%20Screenshot.png?raw=true')
+st.image('https://github.com/tanmay-nemade01/experimental_features/blob/main/screenshots/CDP%20DDL%20Screenshot.png?raw=true')
