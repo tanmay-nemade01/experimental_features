@@ -23,7 +23,7 @@ if ddl is not None:
   column_types
   str1 = ''
   for i in column_names:
-    str1 = str1 + i
-  str1
+    str1 = str1 + i + ','
+  str1[:-1]
 
 st.image('https://github.com/tanmay-nemade01/experimental_features/blob/main/screenshots/DDL%20Screenshot.png?raw=true')
