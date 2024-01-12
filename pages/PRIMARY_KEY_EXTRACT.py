@@ -18,9 +18,6 @@ if ddl is not None:
       name, type = ddl.split(" ",1)
       column_names.append(name)
       column_types.append(type)
-
-  column_names
-  column_types
   str1 = ''
   for i in column_names:
     str1 = str1 + i + ','
