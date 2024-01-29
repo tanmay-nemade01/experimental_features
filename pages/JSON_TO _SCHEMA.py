@@ -6,6 +6,7 @@ import io
 
 
 st.title("JSON Data Extractor")
+table_name = st.text_input("Enter Table Name")
 
 uploaded_file = st.file_uploader("Upload a JSON file")
 
@@ -56,7 +57,7 @@ if uploaded_file is not None:
     st.download_button(
         label="Download",
         data=csv_content,
-        file_name="separated_lists.csv",
+        file_name=f"{table_name}.csv",
         mime="text/csv",
     )
 
