@@ -4,6 +4,7 @@ import io
 import pandas as pd
 
 ddl = st.text_input("Enter the DDL")
+table_name = st.text_input("Enter Table Name")
 st.info('Try not to include FILE_DATE COLUMN')
 if ddl is not None:
   try:
@@ -56,7 +57,7 @@ if ddl is not None:
     st.download_button(
         label="Download",
         data=csv_content,
-        file_name="separated_lists.csv",
+        file_name=f"{table_name}.csv",
         mime="text/csv",
     )
 
